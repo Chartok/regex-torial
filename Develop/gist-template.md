@@ -4,7 +4,7 @@ Regular Expressions, commonly known as regex, is a powerful tool used across man
 
 ## Summary
 
-This tutorial will dissect the regex `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` and explain each component. We will also go over the flags that can be used with regex and how they can change the behavior of the regex. Lastly, we will go over some common use cases for regex and how to use them in JavaScript.
+In this tutorial we will focus on the regex `/^<([a-z]+)([^<]+)*(?:>(.*)<\/\1>|\s+\/>)$/` that is a common expression used to parse and validate simple HTML & XML-like tags. We will break down and go over each component of the regex, and explain what it does in conjunction with demonstrating how it works.
 
 ## Table of Contents
 
@@ -23,14 +23,16 @@ This tutorial will dissect the regex `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{
 ## Regex Components
 
 ### Anchors
-Anchors in regex don't match characters, but positions of characters that are before, after, or in between. The anchors in the regex we're deconstructing are `^` and `$`. The `^` anchor marks the start of the string, and `$`marks the end of the string. This ensures that the regex will only match strings that start and end with the pattern we're looking for.
+Anchors don't match characters, but positions of characters that are before, after, or in between them. The anchors in the regex we're deconstructing are `^` and `$`. The `^` anchor marks the start of the string, and `$`marks the end of the string. This ensures that the regex will only match strings that start and end with the pattern we're looking for.
 
-'/^.....$/'
 
-Example: `/^hello$/` will match the string 'hello', but not 'hello world'.
+
+
 
 ### Quantifiers
+Quantifires define the quanitiy of characters that are matched. In the regex we've picked, the quantifiers are `+` and `*`. The `+` signifies that the character before it can appear more than once, but at least once. The `*` signifies that the character before it can appear zero or more times.
 
+Example: `/^<([a-z]+)...$/` de
 ### OR Operator
 
 ### Character Classes
