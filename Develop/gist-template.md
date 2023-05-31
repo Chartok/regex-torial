@@ -1,10 +1,10 @@
-# Title (replace with your title)
+# Demystification of Regex
 
-Introductory paragraph (replace this with your text)
+Regular Expressions, commonly known as regex, is a powerful tool used across many programming languages to match patterns extract data. Regex can initially seem esoteric and difficult to understand, but once we understand their components and how they work, we can use them like you've never thought you could.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+This tutorial will dissect the regex `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` and explain each component. We will also go over the flags that can be used with regex and how they can change the behavior of the regex. Lastly, we will go over some common use cases for regex and how to use them in JavaScript.
 
 ## Table of Contents
 
