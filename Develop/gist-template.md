@@ -23,6 +23,11 @@ This tutorial will dissect the regex `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{
 ## Regex Components
 
 ### Anchors
+Anchors in regex don't match characters, but positions of characters that are before, after, or in between. The anchors in the regex we're deconstructing are `^` and `$`. The `^` anchor marks the start of the string, and `$`marks the end of the string. This ensures that the regex will only match strings that start and end with the pattern we're looking for.
+
+'/^.....$/'
+
+Example: `/^hello$/` will match the string 'hello', but not 'hello world'.
 
 ### Quantifiers
 
